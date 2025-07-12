@@ -11,7 +11,7 @@ It’s a lightweight, beginner-friendly project that shows how creative you can 
 ---
 ## 📸 App Preview
 
-![Screenshot of Voca](screenshot-voca.png)
+![Screenshot of Voca](Screenshot-voca.png)
 
 ## ✨ Features
 
