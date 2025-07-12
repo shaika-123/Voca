@@ -9,6 +9,9 @@ It’s a lightweight, beginner-friendly project that shows how creative you can 
 👉 [https://voca-rho.vercel.app](https://voca-rho.vercel.app)
 
 ---
+## 📸 App Preview
+
+![Screenshot of Voca](screenshot-voca.png)
 
 ## ✨ Features
 
