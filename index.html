@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>🌸 Voca - Voice to Text</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(135deg, #ffe4ec, #f0f4ff);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 60px;
-      color: #444;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- ✅ Responsive Meta Tag -->
+    <title>🌸 Voca - Voice to Text</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        background: linear-gradient(135deg, #ffe4ec, #f0f4ff);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px 40px;
+        color: #444;
+      }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-      color: #ff6fa7;
-    }
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        color: #ff6fa7;
+        text-align: center;
+      }
 
-    .btn {
-      padding: 12px 25px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 25px;
-      margin: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
+      .btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 25px;
+        margin: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
 
-    .start-btn {
-      background-color: #ffd6e0;
-    }
+      .start-btn { background-color: #ffd6e0; }
+      .start-btn:hover { background-color: #ffb3c6; }
 
-    .start-btn:hover {
-      background-color: #ffb3c6;
-    }
+      .stop-btn { background-color: #cde4ff; }
+      .stop-btn:hover { background-color: #a4d0ff; }
 
-    .stop-btn {
-      background-color: #cde4ff;
-    }
+      .copy-btn { background-color: #d6f5d6; }
+      .copy-btn:hover { background-color: #b3e6b3; }
 
-    .stop-btn:hover {
-      background-color: #a4d0ff;
-    }
+      .clear-btn { background-color: #ffe9c6; }
+      .clear-btn:hover { background-color: #ffdb99; }
 
-    .copy-btn {
-      background-color: #d6f5d6;
-    }
+      #output-box {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+      }
 
-    .copy-btn:hover {
-      background-color: #b3e6b3;
-    }
+      #output {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        font-size: 1.2rem;
+        margin-top: 25px;
+        border: 2px dashed #ffb6c1;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        min-height: 150px;
+      }
 
-    .clear-btn {
-      background-color: #ffe9c6;
-    }
+      .status {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #888;
+        text-align: center;
+      }
 
-    .clear-btn:hover {
-      background-color: #ffdb99;
-    }
+      .footer {
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #aaa;
+        text-align: center;
+      }
 
-    #output-box {
-      position: relative;
-      width: 70%;
-    }
+      /* ✅ Responsive Tweaks */
+      @media (max-width: 600px) {
+        .btn {
+          display: block;
+          width: 100%;
+          max-width: 300px;
+          margin: 8px auto;
+        }
 
-    #output {
-      background: #fff;
-      border-radius: 15px;
-      padding: 20px;
-      font-size: 1.2rem;
-      margin-top: 25px;
-      border: 2px dashed #ffb6c1;
-      word-wrap: break-word;
-      white-space: pre-wrap;
-      min-height: 150px;
-    }
+        h1 {
+          font-size: 2rem;
+        }
 
-    .status {
-      margin-top: 10px;
-      font-size: 1rem;
-      color: #888;
-    }
+        #output {
+          font-size: 1rem;
+          padding: 15px;
+        }
+      }
+    </style>
+  </head>
 
-    .footer {
-      margin-top: 50px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
-</head>
 
 <body>
   <h1>🎀 Voca</h1>
