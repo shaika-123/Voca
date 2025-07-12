@@ -1,3 +1,4 @@
+![Voca Banner](banner.png)
 # 🎀 Voca - Voice to Text App
 
 Voca is a kawaii-themed voice-to-text web app that uses the browser's native **Web Speech API** to convert your voice into real-time transcriptions — all inside a soft, aesthetic UI.  
